@@ -1,0 +1,33 @@
+{
+  "name": "flotfeali/payping",
+  "type": "library",
+  "authors": [
+    {
+      "name": "farhad lotfeali",
+      "email": "flotfeali@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PayPing\\": "src/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.2",
+    "ext-openssl": "*",
+    "ext-json": "*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PayPing\\Laravel\\PayPingServiceProvider"
+      ],
+      "aliases": {
+        "Authorization": "PayPing\\Laravel\\\\Facade\\Authorization",
+        "Payment": "PayPing\\Laravel\\\\Facade\\Payment"
+      }
+    }
+}
