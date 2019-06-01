@@ -31,5 +31,6 @@
         "Payment": "PayPing\\Laravel\\Facade\\Payment"
       }
     }
-  }
+  },
+  "minimum-stability": "dev"
 }
