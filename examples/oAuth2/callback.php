@@ -12,7 +12,8 @@ $callback = "http://localhost:8000/callback.php";
 
 $auth = new PayPing\Authorization($client_id,$client_secret,$callback,$codeVerify);
 try {
-    var_dump($auth->getAccessToken("http://localhost:8000/callback.php", $codeVerify));
+	echo '<pre>';
+    print_r($auth->getAccessToken("http://localhost:8000/callback.php", $codeVerify));
 } catch (Exception $exception) {
     echo $exception->getMessage();
 }

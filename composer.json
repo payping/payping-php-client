@@ -26,8 +26,9 @@
         "PayPing\\Laravel\\PayPingServiceProvider"
       ],
       "aliases": {
-        "Authorization": "PayPing\\Laravel\\\\Facade\\Authorization",
-        "Payment": "PayPing\\Laravel\\\\Facade\\Payment"
+        "Authorization": "PayPing\\Laravel\\Facade\\Authorization",
+        "Payment": "PayPing\\Laravel\\Facade\\Payment"
       }
     }
+  }
 }
