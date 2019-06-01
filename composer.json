@@ -1,7 +1,7 @@
 {
   "name": "flotfeali/payping-client",
   "type": "library",
-  "license": "MIT"
+  "license": "MIT",
   "authors": [
     {
       "name": "farhad lotfeali",
