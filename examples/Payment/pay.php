@@ -1,7 +1,7 @@
 <?php
 include "../../vendor/autoload.php";
 
-$token = "07d2bd1c2c4fc148e315dc2e16a85395d58a68431c021ec854e80c4825337221";
+$token = "1200ed8684b98d8caad79406fa4471839574571f7e10aa58d9f281dd1dd88edd";
 
 $args = [
     "amount" => 100,

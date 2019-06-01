@@ -11,7 +11,7 @@ class Payment
 
     const BASE_URL = 'https://api.payping.ir/v1/';
 
-    private $token = "07d2bd1c2c4fc148e315dc2e16a85395d58a68431c021ec854e80c4825337221";
+    private $token = "";
 
     /**
      * کتابخانه guzzle برای فرخوانی وب سرویس ها
