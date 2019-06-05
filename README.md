@@ -1,4 +1,4 @@
-# payping-clien
+# payping-client
 
 payment and oauth2 request library for payping
 
