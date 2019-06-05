@@ -1,6 +1,7 @@
 {
-  "name": "flotfeali/payping",
+  "name": "flotfeali/payping-client",
   "type": "library",
+  "license": "MIT",
   "authors": [
     {
       "name": "farhad lotfeali",
@@ -30,5 +31,7 @@
         "Payment": "PayPing\\Laravel\\Facade\\Payment"
       }
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "version": "0.0.1"
 }
