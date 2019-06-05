@@ -2,10 +2,11 @@
 
 include "../../vendor/autoload.php";
 
-$client_id = "318b6954-2f9f-4100-8610-0ea8c373d3b5"; // TODO remove it
-$client_secret = "4b9c8835-f833-42d0-aa5f-47324e8c358a"; // TODO remove it
-$codeVerify = 'A0GNGBUtNorqkfaHyXf4OefxSVUGDxhtB-AHJlVt0H8';//generateVerified();
+$client_id = "cleint-id"; 
+$client_secret = "cleint-secret"; 
+$codeVerify = 'شناسه یکتا به ازای هر کاربر';//generateVerified();
 $callback = "http://localhost:8000/callback.php";
+$scopes = [PayPing\Scopes::OPENID,PayPing\Scopes::PROFILE];
 
 
 try {

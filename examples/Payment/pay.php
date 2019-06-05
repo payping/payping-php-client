@@ -1,15 +1,14 @@
 <?php
 include "../../vendor/autoload.php";
 
-$token = "1200ed8684b98d8caad79406fa4471839574571f7e10aa58d9f281dd1dd88edd";
-
+$token = "توکن اختصاصی ";
 $args = [
-    "amount" => 100,
-//    "payerIdentity" => "",
-    "payerName" => "farhad",
-    "description" => "this is for show",
-    "returnUrl" => "http://localhost:8000/callback.php",
-    "clientRefId" => "inv-1000"
+    "amount" => میلغ تراکنش,
+    "payerIdentity" => "شناسه کاربر در صورت وجود",
+    "payerName" => "نام کاربر پرداخت کننده",
+    "description" => "توضیحات",
+    "returnUrl" => "آدرس برگشتی از سمت درگاه",
+    "clientRefId" => "شماره فاکتور"
 ];
 
 $payment = new \PayPing\Payment($token);
