@@ -88,7 +88,7 @@ $client_secret = "client-secret";
 $codeVerify = 'یک  شناسه یکتا به ازای هر کاربر ';//generateVerified();
 $callback = "آدرس برگشتی هنگام ورود در پی پینگ";
 $scope = [ //دسترسی های مورد نیاز از پنل پی پینگ 
-   Scopes::OPENID
+   PayPing\Scopes::OPENID
    //, ...
 ];
 
@@ -113,7 +113,7 @@ $callback = "آدرس برگشتی هنگام ورود در پی پینگ";
 $auth = new PayPing\Authorization($client_id,$client_secret,$callback,$codeVerify);
 try {
 	echo '<pre>';
-    print_r($auth->getAccessToken("http://localhost:8000/callback.php", $codeVerify));
+    print_r($auth->getAccessToken($callback, $codeVerify));
 } catch (Exception $exception) {
     echo $exception->getMessage();
 }
