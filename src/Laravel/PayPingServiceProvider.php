@@ -2,9 +2,7 @@
 namespace  PayPing\Laravel;
 
 use Illuminate\Support\ServiceProvider;
-use Zarinpal\Drivers\DriverInterface;
-use Zarinpal\Drivers\RestDriver;
-use Zarinpal\Zarinpal;
+
 
 class PayPingServiceProvider extends ServiceProvider
 {
