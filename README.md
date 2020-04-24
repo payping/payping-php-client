@@ -45,7 +45,7 @@ try {
 }
 catch (PayPingException $e) {
 	foreach (json_decode($e->getMessage(), true) as $msg) {
-		echo msg;
+		echo $msg;
 	}
 } 
 ``` 
