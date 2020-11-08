@@ -42,9 +42,12 @@ try {
     }else{
         echo "fail";
     }
-} catch (Exception $e) {
-    echo $e->getMessage();
 }
+catch (PayPingException $e) {
+	foreach (json_decode($e->getMessage(), true) as $msg) {
+		echo $msg;
+	}
+} 
 ``` 
 ### بررسی ثبت نام کاربر بر اساس ایمیل
 ```php
