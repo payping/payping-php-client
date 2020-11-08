@@ -115,7 +115,7 @@ class Authorization
             $scopes[] = Scopes::OPENID;
 
         $params = [
-            'scope' => implode(',', $scopes),
+            'scope' => implode(' ', $scopes),
             'response_type' => 'code',
             'client_id' => $this->client_id,
             'code_challenge' => generateCodeChallenge($this->getCodeVerified()),
