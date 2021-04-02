@@ -17,7 +17,7 @@
     ]
   },
   "require": {
-    "guzzlehttp/guzzle": "^6.2",
+    "guzzlehttp/guzzle": "^6.2|^7.0",
     "ext-openssl": "*",
     "ext-json": "*"
   },
